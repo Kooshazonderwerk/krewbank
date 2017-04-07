@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: krew.krewbanking:api">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/krew/krewbanking/api/api-.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/krew/krewbanking/api/api--javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/krew/krewbanking/api/api--sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
