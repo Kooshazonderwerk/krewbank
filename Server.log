@@ -5,3 +5,7 @@ INFO	2017-04-06 16:53:52,869	0	krew.krewbanking.server.Databaseimpl	[main]	Datab
 INFO	2017-04-06 16:53:53,613	744	krew.krewbanking.server.Databaseimpl	[main]	Server is gestart op port8025
 INFO	2017-04-06 19:32:26,824	0	krew.krewbanking.server.Databaseimpl	[main]	Database instantie is class krew.krewbanking.server.MockDatabase
 INFO	2017-04-06 19:32:27,696	872	krew.krewbanking.server.Databaseimpl	[main]	Server is gestart op port8025
+INFO	2017-04-07 02:00:38,444	0	krew.krewbanking.server.Databaseimpl	[main]	Database instantie is class krew.krewbanking.server.MockDatabase
+INFO	2017-04-07 02:00:39,334	890	krew.krewbanking.server.Databaseimpl	[main]	Server is gestart op port8025
+INFO	2017-04-07 02:48:35,059	0	krew.krewbanking.server.Databaseimpl	[main]	Database instantie is class krew.krewbanking.server.MockDatabase
+INFO	2017-04-07 02:48:35,852	793	krew.krewbanking.server.Databaseimpl	[main]	Server is gestart op port8025

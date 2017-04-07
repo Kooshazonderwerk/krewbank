@@ -48,4 +48,9 @@ public class Server
         return GrizzlyHttpServerFactory.createHttpServer(uri,config, true);
 
     }
+
+    public static Database getDatabase()
+    {
+        return DB_iNSTANCE;
+    }
 }
