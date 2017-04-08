@@ -4,6 +4,9 @@ package krew.krewbanking.client;
  * Created by Kush on 7-4-2017.
  */
 //import krew.krewbanking.api.*;
+import krew.krewbanking.api.BalanceResponse;
+import krew.krewbanking.api.WithdrawRequest;
+import krew.krewbanking.api.WithdrawResponse;
 import org.glassfish.jersey.jackson.JacksonFeature;
 
 import javax.ws.rs.client.*;
@@ -11,10 +14,6 @@ import javax.ws.rs.core.Form;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-
-/**
- * Created by elvira on 24-03-17.
- */
 public class MyClient
 {
     private Client client;
@@ -24,7 +23,7 @@ public class MyClient
     public MyClient(int port)
     {
         client  = ClientBuilder.newClient().register(JacksonFeature.class);
-        target  = client.target("http://145.24.222.127:" + port);
+        target  = client.target("http://145.24.222.100:" + port);
     }
 
     public static void main(String[] args)

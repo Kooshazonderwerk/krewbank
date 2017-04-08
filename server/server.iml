@@ -55,6 +55,7 @@
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
-    <orderEntry type="library" name="Maven: krew.krewbanking:api" level="project" />
+    <orderEntry type="module" module-name="api" />
+    <orderEntry type="library" name="Maven: krew:api:1.0" level="project" />
   </component>
 </module>

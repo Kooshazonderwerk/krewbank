@@ -1,7 +1,9 @@
 package krew.krewbanking.server;
 
 
-import krew.krewbanking.api;
+import krew.krewbanking.api.BalanceResponse;
+import krew.krewbanking.api.WithdrawRequest;
+import krew.krewbanking.api.WithdrawResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
