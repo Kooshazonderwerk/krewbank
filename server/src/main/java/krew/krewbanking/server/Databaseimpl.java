@@ -21,9 +21,9 @@ public class Databaseimpl implements Database {
     public Databaseimpl() {
 
         this.con = null;
-        this.host = "jdbc:mysql://localhost:3306/Bankaccount?serverTimezone=UTC&useSSL=false";
+        this.host = "jdbc:mysql://localhost:3306/Bankaccount";
         this.uName = "root";
-        this.uPass = "Project3";
+        this.uPass = "password naar de mysql database";
         this.rs = null;
 
         this.connect();

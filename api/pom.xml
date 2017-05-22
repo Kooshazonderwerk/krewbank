@@ -4,17 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>krewbanking</artifactId>
-        <groupId>krew.krewbanking</groupId>
+        <groupId>krew</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-        <artifactId>api</artifactId>
-        <packaging>jar</packaging>
-        <dependencies>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-core-asl</artifactId>
-                <version>1.9.11</version>
-            </dependency>
-        </dependencies>
-    </project>
+
+    <artifactId>api</artifactId>
+
+
+</project>
