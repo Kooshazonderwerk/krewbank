@@ -1,4 +1,4 @@
-package krew.krewbanking.server;
+package krew.server;
 
 
 import org.slf4j.Logger;
@@ -21,9 +21,9 @@ public class Databaseimpl implements Database {
     public Databaseimpl() {
 
         this.con = null;
-        this.host = "jdbc:mysql://localhost:3306/Bankaccount";
+        this.host = "jdbc:mysql://localhost:3306/Bankaccount?serverTimezone=UTC";
         this.uName = "root";
-        this.uPass = "password naar de mysql database";
+        this.uPass = "Project3";
         this.rs = null;
 
         this.connect();
@@ -31,13 +31,14 @@ public class Databaseimpl implements Database {
 
     private void connect() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(host, uName, uPass);
             logger.info("Connection to the database is established.");
 
 
         } catch (Exception e) {
             logger.error("Class not found, connection to the database failed", e);
+            logger.error("Probleem komt door de Driver die niet goed is of de wachtwoord en gebruikersnaam!");
         }
     }
 

@@ -1,4 +1,4 @@
-package krew.krewbanking.server;
+package krew.server;
 
 /**
  * Created by Kush on 3-4-2017.

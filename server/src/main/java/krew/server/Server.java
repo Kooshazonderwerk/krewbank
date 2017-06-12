@@ -1,4 +1,4 @@
-package krew.krewbanking.server;
+package krew.server;
 
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -12,26 +12,22 @@ import java.net.URI;
 /**
  * Created by Kush on 3-4-2017.
  */
-public class Server
-{
-    private static Logger logger= LoggerFactory.getLogger(Databaseimpl.class);
+public class Server {
+    private static Logger logger = LoggerFactory.getLogger(Databaseimpl.class);
     private static Database DB_iNSTANCE;
     private int port = 8025;
 
-    public Server() throws Exception
-    {
+    public Server() throws Exception {
         HttpServer server = initWebserver();
         server.start();
         logger.info("Server is gestart op port" + port);
 
-        while(true)
-        {
+        while (true) {
             Thread.sleep(1000);
         }
     }
 
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
         DB_iNSTANCE = (args.length == 1 && args[0].equals("--mock-db"))
                 ? new MockDatabase()
                 : new Databaseimpl();
@@ -40,17 +36,15 @@ public class Server
         new Server();
     }
 
-    private HttpServer initWebserver()
-    {
+    private HttpServer initWebserver() {
         ResourceConfig config = new ResourceConfig(BankEndpoint.class);
         config.register(JacksonJaxbJsonProvider.class);
-        URI uri = URI.create("http://0.0.0.0:"+ port);
-        return GrizzlyHttpServerFactory.createHttpServer(uri,config, true);
+        URI uri = URI.create("http://0.0.0.0:" + port);
+        return GrizzlyHttpServerFactory.createHttpServer(uri, config, true);
 
     }
 
-    public static Database getDatabase()
-    {
+    public static Database getDatabase() {
         return DB_iNSTANCE;
     }
 }
