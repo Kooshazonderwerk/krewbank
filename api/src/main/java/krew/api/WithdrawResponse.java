@@ -1,60 +1,39 @@
 package krew.api;
 
+/**
+ * Created by Kush on 13-6-2017.
+ */
 import org.codehaus.jackson.annotate.JsonProperty;
 
-/**
- * Created by kooswerkloos
- */
-public class WithdrawResponse
-{
+public class WithdrawResponse {
+
     @JsonProperty
-    private String response;
+    private boolean succeeded;
     @JsonProperty
-    private long transactionNumber;
-    @JsonProperty
-    private long newSaldo;
+    private long transactieNummer;
 
-    public WithdrawResponse()
-    {
+    public WithdrawResponse() {
     }
 
-    public String getResponse()
-    {
-        return response;
+    public WithdrawResponse(boolean succeeded, long transactieNummer) {
+        this.setSucceeded(succeeded);
+        this.setTransactieNummer(transactieNummer);
     }
 
-    public void setResponse(String response)
-    {
-        this.response = response;
+    public boolean isSucceeded() {
+        return succeeded;
     }
 
-    public long getTransactionNumber()
-    {
-        return transactionNumber;
+    public void setSucceeded(boolean succeeded) {
+        this.succeeded = succeeded;
     }
 
-    public void setTransactionNumber(long transactionNumber)
-    {
-        this.transactionNumber = transactionNumber;
+    public long getTransactieNummer() {
+        return transactieNummer;
     }
 
-    public long getNewSaldo()
-    {
-        return newSaldo;
+    public void setTransactieNummer(long transactieNummer) {
+        this.transactieNummer = transactieNummer;
     }
 
-    public void setNewSaldo(long newSaldo)
-    {
-        this.newSaldo = newSaldo;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "WithdrawResponse{" +
-                "response='" + response + '\'' +
-                ", transactionNumber=" + transactionNumber +
-                ", newSaldo=" + newSaldo +
-                '}';
-    }
 }

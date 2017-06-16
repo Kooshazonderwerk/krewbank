@@ -1,37 +1,51 @@
 package krew.api;
 
+/**
+ * Created by Kush on 13-6-2017.
+ */
 import org.codehaus.jackson.annotate.JsonProperty;
 
-/**
- * Created by kooswerkloos
- */
-public class WithdrawRequest
-{
+public class WithdrawRequest {
+
     @JsonProperty
-    private String IBAN;
+    private long pinAmount;
     @JsonProperty
-    private long amount;
+    private int bankID;
+    @JsonProperty
+    private String pasID;
 
-    public WithdrawRequest()
-    {
-    }
-    public String getIBAN()
-    {
-        return IBAN;
+    public WithdrawRequest() {
+
     }
 
-    public void setIBAN(String IBAN)
-    {
-        this.IBAN = IBAN;
+    public WithdrawRequest(int bankID, String pasID, long pinAmount) {
+        this.setBankID(bankID);
+        this.setPasID(pasID);
+        this.setPinAmount(pinAmount);
     }
 
-    public long getAmount()
-    {
-        return amount;
+    public int getBankID() {
+        return this.bankID;
     }
 
-    public void setAmount(long amount)
-    {
-        this.amount = amount;
+    public void setBankID(int bankID) {
+        this.bankID = bankID;
     }
+
+    public String getPasID() {
+        return this.pasID;
+    }
+
+    public void setPasID(String pasID) {
+        this.pasID = pasID;
+    }
+
+    public long getPinAmount() {
+        return pinAmount;
+    }
+
+    public void setPinAmount(long pinAmount) {
+        this.pinAmount = pinAmount;
+    }
+
 }

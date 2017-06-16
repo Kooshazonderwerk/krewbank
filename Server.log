@@ -55,3 +55,84 @@ INFO	2017-06-12 15:07:57,280	0	Databaseimpl	[main]	Database instantie is class M
 INFO	2017-06-12 15:09:43,173	0	Databaseimpl	[main]	Database instantie is class MockDatabase
 INFO	2017-06-12 15:10:18,430	0	Databaseimpl	[main]	Database instantie is class MockDatabase
 INFO	2017-06-12 15:13:20,434	0	Databaseimpl	[main]	Database instantie is class MockDatabase
+ERROR	2017-06-12 17:03:58,068	0	krew.server.Databaseimpl	[main]	Class not found, connection to the database failed
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at krew.server.Databaseimpl.connect(Databaseimpl.java:35)
+	at krew.server.Databaseimpl.<init>(Databaseimpl.java:29)
+	at krew.server.Server.main(Server.java:31)
+ERROR	2017-06-12 17:03:58,070	2	krew.server.Databaseimpl	[main]	Probleem komt door de Driver die niet goed is of de wachtwoord en gebruikersnaam!
+INFO	2017-06-12 17:03:58,070	2	krew.server.Databaseimpl	[main]	Database instantie is class krew.server.Databaseimpl
+ERROR	2017-06-12 18:19:20,687	1	krew.server.Databaseimpl	[main]	Class not found, connection to the database failed
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at krew.server.Databaseimpl.connect(Databaseimpl.java:35)
+	at krew.server.Databaseimpl.<init>(Databaseimpl.java:29)
+	at krew.server.Server.main(Server.java:31)
+ERROR	2017-06-12 18:19:20,688	2	krew.server.Databaseimpl	[main]	Probleem komt door de Driver die niet goed is of de wachtwoord en gebruikersnaam!
+INFO	2017-06-12 18:19:20,688	2	krew.server.Databaseimpl	[main]	Database instantie is class krew.server.Databaseimpl
+ERROR	2017-06-12 18:19:42,714	0	krew.server.Databaseimpl	[main]	Class not found, connection to the database failed
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at krew.server.Databaseimpl.connect(Databaseimpl.java:35)
+	at krew.server.Databaseimpl.<init>(Databaseimpl.java:29)
+	at krew.server.Server.main(Server.java:31)
+ERROR	2017-06-12 18:19:42,716	2	krew.server.Databaseimpl	[main]	Probleem komt door de Driver die niet goed is of de wachtwoord en gebruikersnaam!
+INFO	2017-06-12 18:19:42,716	2	krew.server.Databaseimpl	[main]	Database instantie is class krew.server.Databaseimpl
+ERROR	2017-06-12 18:23:40,984	0	krew.server.Databaseimpl	[main]	Class not found, connection to the database failed
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at krew.server.Databaseimpl.connect(Databaseimpl.java:35)
+	at krew.server.Databaseimpl.<init>(Databaseimpl.java:29)
+	at krew.server.Server.main(Server.java:31)
+ERROR	2017-06-12 18:23:40,986	2	krew.server.Databaseimpl	[main]	Probleem komt door de Driver die niet goed is of de wachtwoord en gebruikersnaam!
+INFO	2017-06-12 18:23:40,986	2	krew.server.Databaseimpl	[main]	Database instantie is class krew.server.Databaseimpl
+ERROR	2017-06-13 14:37:42,963	0	krew.server.Databaseimpl	[main]	Class not found, connection to the database failed
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at krew.server.Databaseimpl.connect(Databaseimpl.java:35)
+	at krew.server.Databaseimpl.<init>(Databaseimpl.java:29)
+	at krew.server.Server.main(Server.java:31)
+ERROR	2017-06-13 14:37:42,973	10	krew.server.Databaseimpl	[main]	Probleem komt door de Driver die niet goed is of de wachtwoord en gebruikersnaam!
+INFO	2017-06-13 14:37:42,973	10	krew.server.Databaseimpl	[main]	Database instantie is class krew.server.Databaseimpl
+INFO	2017-06-13 14:37:43,698	735	krew.server.Databaseimpl	[main]	Server is gestart op port8025

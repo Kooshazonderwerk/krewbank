@@ -1,34 +1,30 @@
 package krew.api;
 
+/**
+ * Created by Kush on 13-6-2017.
+ */
 import org.codehaus.jackson.annotate.JsonProperty;
 
-/**
- * Created by Kooswerkloos
- */
-public class BalanceResponse
-{
+public class BalanceResponse {
+
     @JsonProperty
     private long balance;
-    @JsonProperty
-    private String rekeningNummer;
 
-    public long getBalance()
-    {
+    public BalanceResponse() {
+    }
+
+    public BalanceResponse(long balance) {
+        this.setBalance(balance);
+    }
+
+    public long getBalance() {
         return balance;
     }
 
-    public void setBalance(long balance)
-    {
+    public void setBalance(long balance) {
         this.balance = balance;
     }
 
-    public String getRekeningNummer()
-    {
-        return rekeningNummer;
-    }
-
-    public void setRekeningNummer(String rekeningNummer)
-    {
-        this.rekeningNummer = rekeningNummer;
+    public void setRekeningNummer(String rekeningNummer) {
     }
 }

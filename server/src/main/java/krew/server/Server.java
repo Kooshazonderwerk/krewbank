@@ -1,11 +1,11 @@
 package krew.server;
 
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
+import org.glassfish.grizzly.http.server.HttpServer;
+import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.glassfish.grizzly.http.server.HttpServer;
-import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 
 import java.net.URI;
 
@@ -15,7 +15,7 @@ import java.net.URI;
 public class Server {
     private static Logger logger = LoggerFactory.getLogger(Databaseimpl.class);
     private static Database DB_iNSTANCE;
-    private int port = 8025;
+    private int port = 8080;
 
     public Server() throws Exception {
         HttpServer server = initWebserver();
@@ -37,7 +37,7 @@ public class Server {
     }
 
     private HttpServer initWebserver() {
-        ResourceConfig config = new ResourceConfig(BankEndpoint.class);
+        ResourceConfig config = new ResourceConfig();
         config.register(JacksonJaxbJsonProvider.class);
         URI uri = URI.create("http://0.0.0.0:" + port);
         return GrizzlyHttpServerFactory.createHttpServer(uri, config, true);
